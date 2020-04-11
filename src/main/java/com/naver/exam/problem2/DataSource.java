@@ -10,7 +10,7 @@ public class DataSource {
     public static int idIndex = 0;
 
     public static TestData newData() {
-        return new TestData(idIndex++, "name" + idIndex);
+        return new TestData(idIndex, "name" + idIndex++);
     }
 }
 
